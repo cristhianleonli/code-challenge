@@ -19,6 +19,9 @@ class ProductView: UIView {
     private let defaultMargin: CGFloat = 5
     private let buttonHeight: CGFloat = 50
     
+    typealias ProductCallback = () -> Void
+    var onTap: ProductCallback?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -57,6 +60,8 @@ private extension ProductView {
             button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: defaultMargin),
             button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -defaultMargin)
         ])
+        
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
     }
     
     func setupLabel() {
@@ -72,5 +77,9 @@ private extension ProductView {
         
         descriptionLabel.font = Fonts.create(weight: .regular, size: 15)
         descriptionLabel.textColor = Colors.gray
+    }
+    
+    @objc func buttonTapped(_ sender: UIButton) {
+        onTap?()
     }
 }

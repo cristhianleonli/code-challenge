@@ -13,6 +13,11 @@
 		9F08616725E43BBB00C1ED23 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F08616625E43BBB00C1ED23 /* ProductView.swift */; };
 		9F08618425E449CE00C1ED23 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F08618325E449CE00C1ED23 /* RoundButton.swift */; };
 		9F08618925E449FC00C1ED23 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F08618825E449FC00C1ED23 /* MainButton.swift */; };
+		9F08619A25E44E2800C1ED23 /* ProductDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F08619925E44E2800C1ED23 /* ProductDetail.storyboard */; };
+		9F0861A225E44E3E00C1ED23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0861A125E44E3E00C1ED23 /* DetailViewController.swift */; };
+		9F0861A725E44EA000C1ED23 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0861A625E44EA000C1ED23 /* DetailCoordinator.swift */; };
+		9F0861AC25E450D000C1ED23 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0861AB25E450D000C1ED23 /* DetailViewModel.swift */; };
+		9F0861B125E450F800C1ED23 /* DetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0861B025E450F800C1ED23 /* DetailConfigurator.swift */; };
 		9F13252C25E4158A004C4F51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13252B25E4158A004C4F51 /* AppDelegate.swift */; };
 		9F13253525E4158C004C4F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F13253425E4158C004C4F51 /* Assets.xcassets */; };
 		9F13253825E4158C004C4F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F13253625E4158C004C4F51 /* LaunchScreen.storyboard */; };
@@ -77,6 +82,11 @@
 		9F08616625E43BBB00C1ED23 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		9F08618325E449CE00C1ED23 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		9F08618825E449FC00C1ED23 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		9F08619925E44E2800C1ED23 /* ProductDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetail.storyboard; sourceTree = "<group>"; };
+		9F0861A125E44E3E00C1ED23 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9F0861A625E44EA000C1ED23 /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		9F0861AB25E450D000C1ED23 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		9F0861B025E450F800C1ED23 /* DetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfigurator.swift; sourceTree = "<group>"; };
 		9F13252825E4158A004C4F51 /* CodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F13252B25E4158A004C4F51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F13253425E4158C004C4F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,6 +194,18 @@
 				9F08618825E449FC00C1ED23 /* MainButton.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		9F08619325E44E1600C1ED23 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9F08619925E44E2800C1ED23 /* ProductDetail.storyboard */,
+				9F0861A125E44E3E00C1ED23 /* DetailViewController.swift */,
+				9F0861A625E44EA000C1ED23 /* DetailCoordinator.swift */,
+				9F0861AB25E450D000C1ED23 /* DetailViewModel.swift */,
+				9F0861B025E450F800C1ED23 /* DetailConfigurator.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		9F13251F25E4158A004C4F51 = {
@@ -301,6 +323,7 @@
 		9F13256C25E41AE5004C4F51 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9F08619325E44E1600C1ED23 /* Detail */,
 				9F1325B925E41CA3004C4F51 /* Main */,
 			);
 			path = Scenes;
@@ -492,6 +515,7 @@
 				9F1325FE25E41FE2004C4F51 /* AvertaPE-Bold.otf in Resources */,
 				9F13260025E41FE2004C4F51 /* AvertaPE-Light.otf in Resources */,
 				9F13253525E4158C004C4F51 /* Assets.xcassets in Resources */,
+				9F08619A25E44E2800C1ED23 /* ProductDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +676,9 @@
 				9F1325B525E41C8F004C4F51 /* Decodable.swift in Sources */,
 				9F08616725E43BBB00C1ED23 /* ProductView.swift in Sources */,
 				9F1325C825E41CE7004C4F51 /* MainConfigurator.swift in Sources */,
+				9F0861AC25E450D000C1ED23 /* DetailViewModel.swift in Sources */,
 				9FBFA3F025E42D530002C8E0 /* ApiProductInteractor.swift in Sources */,
+				9F0861A725E44EA000C1ED23 /* DetailCoordinator.swift in Sources */,
 				9FBFA3DB25E42B6E0002C8E0 /* ApplicationError.swift in Sources */,
 				9F08618925E449FC00C1ED23 /* MainButton.swift in Sources */,
 				9F13259B25E41BDF004C4F51 /* Colors+Create.swift in Sources */,
@@ -661,11 +687,13 @@
 				9F08616225E435EB00C1ED23 /* ProductCellModel.swift in Sources */,
 				9F13257925E41B64004C4F51 /* AppearanceManager.swift in Sources */,
 				9FBFA40225E42DDF0002C8E0 /* MockProductInteractor+FetchAll.swift in Sources */,
+				9F0861B125E450F800C1ED23 /* DetailConfigurator.swift in Sources */,
 				9FBFA3F525E42D7B0002C8E0 /* ApiProductInteractor+FetchAll.swift in Sources */,
 				9F13252C25E4158A004C4F51 /* AppDelegate.swift in Sources */,
 				9F1325B025E41C61004C4F51 /* Reusable+Storyboard.swift in Sources */,
 				9FBFA3EB25E42D300002C8E0 /* ProductInteractor.swift in Sources */,
 				9F1325C325E41CD0004C4F51 /* MainViewModel.swift in Sources */,
+				9F0861A225E44E3E00C1ED23 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

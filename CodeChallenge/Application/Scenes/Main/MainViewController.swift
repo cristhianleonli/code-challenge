@@ -14,9 +14,6 @@ class MainViewController: UIViewController {
     // MARK: - Properties
     
     var viewModel: MainViewModel!
-    
-    // MARK: - IBOutlets
-    
     private let productsStack: AloeStackView = AloeStackView()
     
     // MARK: - Life Cycle
@@ -36,6 +33,7 @@ class MainViewController: UIViewController {
 }
 
 // MARK: - Private methods
+
 private extension MainViewController {
     func subscribeToChanges() {
         // table view rx datasource
@@ -45,9 +43,15 @@ private extension MainViewController {
                 onNext: { [weak self] products in
                     self?.productsStack.removeAllRows()
                     
-                    products.forEach { model in
+                    products.forEach { product in
+                        let model = ProductCellModel(product: product)
                         let productView = ProductView()
                         productView.fillData(model: model)
+                        
+                        productView.onTap = { [weak self] in
+                            self?.viewModel.showDetail(product: product)
+                        }
+                        
                         self?.productsStack.addRow(productView)
                     }
                 }

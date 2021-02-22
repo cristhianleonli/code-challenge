@@ -39,3 +39,11 @@ extension MainCoordinator {
         navigationController.pushViewController(viewController, animated: false)
     }
 }
+
+// MARK: - Navigation out
+extension MainCoordinator {
+    func showDetail(product: Product) {
+        DetailCoordinator(navigationController: navigationController)
+            .start(product: product)
+    }
+}
