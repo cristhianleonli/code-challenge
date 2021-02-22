@@ -12,6 +12,7 @@ target 'CodeChallenge' do
   pod 'RxSwift', '5.1.0'
   pod 'RxCocoa', '5.1.0'
   
+  # Simulate tableview
   pod 'AloeStackView'
   
   # Network layer

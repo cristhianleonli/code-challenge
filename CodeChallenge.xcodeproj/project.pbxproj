@@ -181,7 +181,6 @@
 			children = (
 				9F08616625E43BBB00C1ED23 /* ProductView.swift */,
 				9F08616125E435EB00C1ED23 /* ProductCellModel.swift */,
-				9F08618325E449CE00C1ED23 /* RoundButton.swift */,
 				9F08618825E449FC00C1ED23 /* MainButton.swift */,
 			);
 			path = Cell;
@@ -293,6 +292,7 @@
 				9F1325AF25E41C61004C4F51 /* Reusable+Storyboard.swift */,
 				9F1325B425E41C8F004C4F51 /* Decodable.swift */,
 				9FBFA3DA25E42B6E0002C8E0 /* ApplicationError.swift */,
+				9F08618325E449CE00C1ED23 /* RoundButton.swift */,
 				9FBFA3E225E42C2A0002C8E0 /* ApiUrlBuilder.swift */,
 			);
 			path = Util;
