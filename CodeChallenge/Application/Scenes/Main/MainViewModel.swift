@@ -10,7 +10,7 @@ import RxSwift
 
 class MainViewModel {
     
-    // MARK: Properties
+    // MARK: - Properties
     
     private let coordinator: MainCoordinator
     private let configurator: MainConfigurator
@@ -18,7 +18,7 @@ class MainViewModel {
     let disposeBag = DisposeBag()
     let products: BehaviorRelay<[Product]> = BehaviorRelay(value: [])
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle
     
     init(coordinator: MainCoordinator, configurator: MainConfigurator) {
         self.coordinator = coordinator
@@ -39,7 +39,7 @@ extension MainViewModel {
 extension MainViewModel {
     func loadProducts() {
         configurator
-            .fetchProdutsInteractor
+            .produtsInteractor
             .fetchAll(page: 0)
             .subscribe(onNext: { products in
                 self.products.accept(products)

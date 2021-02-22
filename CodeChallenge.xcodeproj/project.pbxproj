@@ -28,10 +28,7 @@
 		9F1325C825E41CE7004C4F51 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1325C725E41CE7004C4F51 /* MainConfigurator.swift */; };
 		9F1325CD25E41CF7004C4F51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1325CC25E41CF7004C4F51 /* Main.storyboard */; };
 		9F1325D625E41D4D004C4F51 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1325D525E41D4D004C4F51 /* MainCoordinator.swift */; };
-		9F1325DB25E41E4D004C4F51 /* FetchProductsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1325DA25E41E4D004C4F51 /* FetchProductsInteractor.swift */; };
-		9F1325E425E41E99004C4F51 /* MockFetchProductsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1325E325E41E99004C4F51 /* MockFetchProductsInteractor.swift */; };
 		9F1325EA25E41ECD004C4F51 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1325E925E41ECD004C4F51 /* Product.swift */; };
-		9F1325F225E41F16004C4F51 /* ApiFetchProductsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1325F125E41F16004C4F51 /* ApiFetchProductsInteractor.swift */; };
 		9F1325FE25E41FE2004C4F51 /* AvertaPE-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F1325F925E41FE1004C4F51 /* AvertaPE-Bold.otf */; };
 		9F1325FF25E41FE2004C4F51 /* AvertaPE-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F1325FA25E41FE1004C4F51 /* AvertaPE-Regular.otf */; };
 		9F13260025E41FE2004C4F51 /* AvertaPE-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F1325FB25E41FE1004C4F51 /* AvertaPE-Light.otf */; };
@@ -42,6 +39,11 @@
 		9FBFA3D125E42B1C0002C8E0 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FBFA3D025E42B1C0002C8E0 /* products.json */; };
 		9FBFA3DB25E42B6E0002C8E0 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFA3DA25E42B6E0002C8E0 /* ApplicationError.swift */; };
 		9FBFA3E325E42C2A0002C8E0 /* ApiUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFA3E225E42C2A0002C8E0 /* ApiUrlBuilder.swift */; };
+		9FBFA3EB25E42D300002C8E0 /* ProductInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFA3EA25E42D300002C8E0 /* ProductInteractor.swift */; };
+		9FBFA3F025E42D530002C8E0 /* ApiProductInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFA3EF25E42D530002C8E0 /* ApiProductInteractor.swift */; };
+		9FBFA3F525E42D7B0002C8E0 /* ApiProductInteractor+FetchAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFA3F425E42D7B0002C8E0 /* ApiProductInteractor+FetchAll.swift */; };
+		9FBFA3FA25E42DA60002C8E0 /* MockProductInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFA3F925E42DA60002C8E0 /* MockProductInteractor.swift */; };
+		9FBFA40225E42DDF0002C8E0 /* MockProductInteractor+FetchAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFA40125E42DDF0002C8E0 /* MockProductInteractor+FetchAll.swift */; };
 		EB5E37157382558558559C4F /* Pods_CodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C10E48CD608F00E2D1AC30 /* Pods_CodeChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,10 +94,7 @@
 		9F1325C725E41CE7004C4F51 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		9F1325CC25E41CF7004C4F51 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9F1325D525E41D4D004C4F51 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		9F1325DA25E41E4D004C4F51 /* FetchProductsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchProductsInteractor.swift; sourceTree = "<group>"; };
-		9F1325E325E41E99004C4F51 /* MockFetchProductsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchProductsInteractor.swift; sourceTree = "<group>"; };
 		9F1325E925E41ECD004C4F51 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		9F1325F125E41F16004C4F51 /* ApiFetchProductsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFetchProductsInteractor.swift; sourceTree = "<group>"; };
 		9F1325F925E41FE1004C4F51 /* AvertaPE-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvertaPE-Bold.otf"; sourceTree = "<group>"; };
 		9F1325FA25E41FE1004C4F51 /* AvertaPE-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvertaPE-Regular.otf"; sourceTree = "<group>"; };
 		9F1325FB25E41FE1004C4F51 /* AvertaPE-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvertaPE-Light.otf"; sourceTree = "<group>"; };
@@ -106,6 +105,11 @@
 		9FBFA3D025E42B1C0002C8E0 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
 		9FBFA3DA25E42B6E0002C8E0 /* ApplicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
 		9FBFA3E225E42C2A0002C8E0 /* ApiUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlBuilder.swift; sourceTree = "<group>"; };
+		9FBFA3EA25E42D300002C8E0 /* ProductInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInteractor.swift; sourceTree = "<group>"; };
+		9FBFA3EF25E42D530002C8E0 /* ApiProductInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProductInteractor.swift; sourceTree = "<group>"; };
+		9FBFA3F425E42D7B0002C8E0 /* ApiProductInteractor+FetchAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiProductInteractor+FetchAll.swift"; sourceTree = "<group>"; };
+		9FBFA3F925E42DA60002C8E0 /* MockProductInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductInteractor.swift; sourceTree = "<group>"; };
+		9FBFA40125E42DDF0002C8E0 /* MockProductInteractor+FetchAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MockProductInteractor+FetchAll.swift"; sourceTree = "<group>"; };
 		A686B3A7AE3C1787E56D9DA9 /* Pods-CodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-CodeChallengeTests/Pods-CodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		B50E731949DBBD847AE7F2F2 /* Pods-CodeChallenge-CodeChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallenge-CodeChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-CodeChallenge-CodeChallengeUITests/Pods-CodeChallenge-CodeChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C1633821F0837A15475FCDAC /* Pods-CodeChallenge-CodeChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallenge-CodeChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodeChallenge-CodeChallengeUITests/Pods-CodeChallenge-CodeChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -298,20 +302,9 @@
 		9F1325D425E41D0B004C4F51 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				9F1325E225E41E5A004C4F51 /* FetchProducts */,
+				9FBFA3FE25E42DB30002C8E0 /* Products */,
 			);
 			path = Interactor;
-			sourceTree = "<group>";
-		};
-		9F1325E225E41E5A004C4F51 /* FetchProducts */ = {
-			isa = PBXGroup;
-			children = (
-				9FBFA3D025E42B1C0002C8E0 /* products.json */,
-				9F1325DA25E41E4D004C4F51 /* FetchProductsInteractor.swift */,
-				9F1325E325E41E99004C4F51 /* MockFetchProductsInteractor.swift */,
-				9F1325F125E41F16004C4F51 /* ApiFetchProductsInteractor.swift */,
-			);
-			path = FetchProducts;
 			sourceTree = "<group>";
 		};
 		9F1325E825E41EC6004C4F51 /* Models */ = {
@@ -329,6 +322,35 @@
 				9F1325D425E41D0B004C4F51 /* Interactor */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		9FBFA3FE25E42DB30002C8E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FBFA3EA25E42D300002C8E0 /* ProductInteractor.swift */,
+				9FBFA3FF25E42DB90002C8E0 /* Api */,
+				9FBFA40025E42DCB0002C8E0 /* Mock */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		9FBFA3FF25E42DB90002C8E0 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				9FBFA3EF25E42D530002C8E0 /* ApiProductInteractor.swift */,
+				9FBFA3F425E42D7B0002C8E0 /* ApiProductInteractor+FetchAll.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		9FBFA40025E42DCB0002C8E0 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				9FBFA3D025E42B1C0002C8E0 /* products.json */,
+				9FBFA3F925E42DA60002C8E0 /* MockProductInteractor.swift */,
+				9FBFA40125E42DDF0002C8E0 /* MockProductInteractor+FetchAll.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -598,6 +620,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FBFA3E325E42C2A0002C8E0 /* ApiUrlBuilder.swift in Sources */,
+				9FBFA3FA25E42DA60002C8E0 /* MockProductInteractor.swift in Sources */,
 				9F1325A325E41C07004C4F51 /* Fonts+Create.swift in Sources */,
 				9F1325D625E41D4D004C4F51 /* MainCoordinator.swift in Sources */,
 				9F1325BB25E41CC2004C4F51 /* MainViewController.swift in Sources */,
@@ -605,18 +628,19 @@
 				9F13256E25E41B26004C4F51 /* Application.swift in Sources */,
 				9F1325EA25E41ECD004C4F51 /* Product.swift in Sources */,
 				9FBFA39525E420BF0002C8E0 /* R.generated.swift in Sources */,
-				9F1325F225E41F16004C4F51 /* ApiFetchProductsInteractor.swift in Sources */,
-				9F1325DB25E41E4D004C4F51 /* FetchProductsInteractor.swift in Sources */,
 				9F1325B525E41C8F004C4F51 /* Decodable.swift in Sources */,
 				9F1325C825E41CE7004C4F51 /* MainConfigurator.swift in Sources */,
+				9FBFA3F025E42D530002C8E0 /* ApiProductInteractor.swift in Sources */,
 				9FBFA3DB25E42B6E0002C8E0 /* ApplicationError.swift in Sources */,
 				9F13259B25E41BDF004C4F51 /* Colors+Create.swift in Sources */,
 				9F1325AB25E41C3E004C4F51 /* Reusable.swift in Sources */,
 				9F13257E25E41B7D004C4F51 /* Colors.swift in Sources */,
 				9F13257925E41B64004C4F51 /* AppearanceManager.swift in Sources */,
+				9FBFA40225E42DDF0002C8E0 /* MockProductInteractor+FetchAll.swift in Sources */,
+				9FBFA3F525E42D7B0002C8E0 /* ApiProductInteractor+FetchAll.swift in Sources */,
 				9F13252C25E4158A004C4F51 /* AppDelegate.swift in Sources */,
-				9F1325E425E41E99004C4F51 /* MockFetchProductsInteractor.swift in Sources */,
 				9F1325B025E41C61004C4F51 /* Reusable+Storyboard.swift in Sources */,
+				9FBFA3EB25E42D300002C8E0 /* ProductInteractor.swift in Sources */,
 				9F1325C325E41CD0004C4F51 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

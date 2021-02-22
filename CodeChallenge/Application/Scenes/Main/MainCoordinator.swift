@@ -10,10 +10,10 @@ import UIKit
 
 class MainCoordinator {
     
-    // MARK: Properties
+    // MARK: - Properties
     private var navigationController: UINavigationController
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -24,7 +24,7 @@ class MainCoordinator {
 extension MainCoordinator {
     func start() {
         let configurator = MainConfigurator(
-            fetchProdutsInteractor: MockFetchProductsInteractor()
+            produtsInteractor: MockProductInteractor()
         )
         
         let viewModel = MainViewModel(

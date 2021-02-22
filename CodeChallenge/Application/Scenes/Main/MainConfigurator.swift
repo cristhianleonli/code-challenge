@@ -9,9 +9,9 @@ import Foundation
 
 struct MainConfigurator {
     
-    let fetchProdutsInteractor: FetchProductsInteractor
+    let produtsInteractor: ProductInteractor
     
-    init(fetchProdutsInteractor: FetchProductsInteractor) {
-        self.fetchProdutsInteractor = fetchProdutsInteractor
+    init(produtsInteractor: ProductInteractor) {
+        self.produtsInteractor = produtsInteractor
     }
 }

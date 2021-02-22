@@ -10,15 +10,15 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    // MARK: Properties
+    // MARK: - Properties
     
     var viewModel: MainViewModel!
     
-    // MARK: IBOutlets
+    // MARK: - IBOutlets
     
     @IBOutlet private var listTableView: UITableView!
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()

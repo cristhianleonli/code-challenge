@@ -10,11 +10,11 @@ import UIKit
 
 class Application {
     
-    // MARK: Properties
+    // MARK: - Properties
     
     static let shared = Application()
     
-    // MARK: Life Cycle
+    // MARK: - Life Cycle
     
     private init() {}
 }

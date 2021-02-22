@@ -9,21 +9,21 @@ import Foundation
 
 class ApiUrlBuilder {
     
-    // MARK: Properties
+    // MARK: = Properties
     
     private let baseUrl: String = "https://www.yogaeasy.de"
     private let apiPath: String = "api"
     
     private var components: [String]
     
-    // MARK: Lide cycle
+    // MARK: - Life cycle
     
     init(version: Version) {
         components = [baseUrl, apiPath]
     }
 }
 
-// MARK: Builder
+// MARK: - Builder
 
 extension ApiUrlBuilder {
     func addComponent(_ path: Endpoint) -> ApiUrlBuilder {
@@ -36,7 +36,7 @@ extension ApiUrlBuilder {
     }
 }
 
-// MARK: Enums
+// MARK: - Enums
 
 extension ApiUrlBuilder {
     enum Version: String {

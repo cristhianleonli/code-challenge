@@ -13,4 +13,13 @@ struct ProductList: Codable {
 
 struct Product: Codable {
     
+    // MARK: - Properties
+    
+    let id: Int
+    let name: String
+    let descriptionHtml: String
+    let subscriptionCycleLength: Int
+    let googleSubscriptionId: String
+    let appleProductId: String
+    let amazonProductId: String?
 }
