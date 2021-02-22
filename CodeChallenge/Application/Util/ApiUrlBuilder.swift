@@ -19,7 +19,7 @@ class ApiUrlBuilder {
     // MARK: - Life cycle
     
     init(version: Version) {
-        components = [baseUrl, apiPath]
+        components = [baseUrl, apiPath, version.rawValue]
     }
 }
 

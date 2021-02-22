@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.4.1)
+  - AloeStackView (1.2.0)
   - R.swift (5.0.0):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
@@ -12,6 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - AloeStackView
   - R.swift (= 5.0.0)
   - RxCocoa (= 5.1.0)
   - RxSwift (= 5.1.0)
@@ -19,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AloeStackView
     - R.swift
     - R.swift.Library
     - RxCocoa
@@ -27,12 +30,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  AloeStackView: 8a4ce0efa08128dd78d538372f60c76c224034bb
   R.swift: f88c7d7d48a2be4dffa132dde1b3d389620310eb
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
   RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
 
-PODFILE CHECKSUM: 5f67a9798bca9080f66f76208b24aef0388b4ebc
+PODFILE CHECKSUM: 907526d2c0d2fc29bdb02e2164f7472a4bcac191
 
 COCOAPODS: 1.9.3

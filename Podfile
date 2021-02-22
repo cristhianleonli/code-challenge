@@ -12,6 +12,8 @@ target 'CodeChallenge' do
   pod 'RxSwift', '5.1.0'
   pod 'RxCocoa', '5.1.0'
   
+  pod 'AloeStackView'
+  
   # Network layer
   pod 'Alamofire', '~> 5.2'
   

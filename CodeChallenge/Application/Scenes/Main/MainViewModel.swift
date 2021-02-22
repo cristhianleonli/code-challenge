@@ -16,7 +16,7 @@ class MainViewModel {
     private let configurator: MainConfigurator
     
     let disposeBag = DisposeBag()
-    let products: BehaviorRelay<[Product]> = BehaviorRelay(value: [])
+    let products: BehaviorRelay<[ProductCellModel]> = BehaviorRelay(value: [])
     
     // MARK: - Life Cycle
     
@@ -41,8 +41,13 @@ extension MainViewModel {
         configurator
             .produtsInteractor
             .fetchAll(page: 0)
-            .subscribe(onNext: { products in
-                self.products.accept(products)
+            .map({ products -> [ProductCellModel] in
+                return products.map { product in
+                    ProductCellModel(product: product)
+                }
+            })
+            .subscribe(onNext: { [weak self] products in
+                self?.products.accept(products)
             })
             .disposed(by: disposeBag)
     }

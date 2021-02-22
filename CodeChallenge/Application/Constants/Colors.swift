@@ -13,4 +13,8 @@ struct Colors {
         static let mainTitleText = UIColor.darkGray
         static let background = UIColor.white
     }
+    
+    static let white: UIColor = UIColor.white
+    static let main: UIColor = .create(hexString: "#3E8E8F")
+    static let gray: UIColor = .create(hexString: "#C1C1C1")
 }

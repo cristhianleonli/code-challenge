@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1E9EB7D6255962D9E02B2EFE /* Pods_CodeChallenge_CodeChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD19F67CCA04993A3D2A56B /* Pods_CodeChallenge_CodeChallengeUITests.framework */; };
 		6941D345528D3DF6B37CFAEC /* Pods_CodeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA643043BC27005EE5D735C8 /* Pods_CodeChallengeTests.framework */; };
+		9F08616225E435EB00C1ED23 /* ProductCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F08616125E435EB00C1ED23 /* ProductCellModel.swift */; };
+		9F08616725E43BBB00C1ED23 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F08616625E43BBB00C1ED23 /* ProductView.swift */; };
+		9F08618425E449CE00C1ED23 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F08618325E449CE00C1ED23 /* RoundButton.swift */; };
+		9F08618925E449FC00C1ED23 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F08618825E449FC00C1ED23 /* MainButton.swift */; };
 		9F13252C25E4158A004C4F51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13252B25E4158A004C4F51 /* AppDelegate.swift */; };
 		9F13253525E4158C004C4F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F13253425E4158C004C4F51 /* Assets.xcassets */; };
 		9F13253825E4158C004C4F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F13253625E4158C004C4F51 /* LaunchScreen.storyboard */; };
@@ -69,6 +73,10 @@
 		23840693FB0C43E9A8ADCCF4 /* Pods-CodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallenge.debug.xcconfig"; path = "Target Support Files/Pods-CodeChallenge/Pods-CodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		778E15CFB4597E30F35A27BE /* Pods-CodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallenge.release.xcconfig"; path = "Target Support Files/Pods-CodeChallenge/Pods-CodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		7BD19F67CCA04993A3D2A56B /* Pods_CodeChallenge_CodeChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeChallenge_CodeChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F08616125E435EB00C1ED23 /* ProductCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellModel.swift; sourceTree = "<group>"; };
+		9F08616625E43BBB00C1ED23 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		9F08618325E449CE00C1ED23 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		9F08618825E449FC00C1ED23 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		9F13252825E4158A004C4F51 /* CodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F13252B25E4158A004C4F51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F13253425E4158C004C4F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,6 +174,17 @@
 				CA643043BC27005EE5D735C8 /* Pods_CodeChallengeTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F08614B25E4335A00C1ED23 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9F08616625E43BBB00C1ED23 /* ProductView.swift */,
+				9F08616125E435EB00C1ED23 /* ProductCellModel.swift */,
+				9F08618325E449CE00C1ED23 /* RoundButton.swift */,
+				9F08618825E449FC00C1ED23 /* MainButton.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		9F13251F25E4158A004C4F51 = {
@@ -295,6 +314,7 @@
 				9F1325C725E41CE7004C4F51 /* MainConfigurator.swift */,
 				9F1325BA25E41CC2004C4F51 /* MainViewController.swift */,
 				9F1325C225E41CD0004C4F51 /* MainViewModel.swift */,
+				9F08614B25E4335A00C1ED23 /* Cell */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -619,6 +639,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F08618425E449CE00C1ED23 /* RoundButton.swift in Sources */,
 				9FBFA3E325E42C2A0002C8E0 /* ApiUrlBuilder.swift in Sources */,
 				9FBFA3FA25E42DA60002C8E0 /* MockProductInteractor.swift in Sources */,
 				9F1325A325E41C07004C4F51 /* Fonts+Create.swift in Sources */,
@@ -629,12 +650,15 @@
 				9F1325EA25E41ECD004C4F51 /* Product.swift in Sources */,
 				9FBFA39525E420BF0002C8E0 /* R.generated.swift in Sources */,
 				9F1325B525E41C8F004C4F51 /* Decodable.swift in Sources */,
+				9F08616725E43BBB00C1ED23 /* ProductView.swift in Sources */,
 				9F1325C825E41CE7004C4F51 /* MainConfigurator.swift in Sources */,
 				9FBFA3F025E42D530002C8E0 /* ApiProductInteractor.swift in Sources */,
 				9FBFA3DB25E42B6E0002C8E0 /* ApplicationError.swift in Sources */,
+				9F08618925E449FC00C1ED23 /* MainButton.swift in Sources */,
 				9F13259B25E41BDF004C4F51 /* Colors+Create.swift in Sources */,
 				9F1325AB25E41C3E004C4F51 /* Reusable.swift in Sources */,
 				9F13257E25E41B7D004C4F51 /* Colors.swift in Sources */,
+				9F08616225E435EB00C1ED23 /* ProductCellModel.swift in Sources */,
 				9F13257925E41B64004C4F51 /* AppearanceManager.swift in Sources */,
 				9FBFA40225E42DDF0002C8E0 /* MockProductInteractor+FetchAll.swift in Sources */,
 				9FBFA3F525E42D7B0002C8E0 /* ApiProductInteractor+FetchAll.swift in Sources */,
