@@ -23,3 +23,6 @@ This project uses Swift 5, R.swift for managing resources in build time.
 - The provided json file didn't contain price fields, so for demo purposes, `$0` will be used as placeholder
 - Larger screen testing
 - Convert the HTML text into attributed string
+- Round the price of the subscription plans
+- Json utf8 characters for german special characters
+- Style HTML text to make it look pretty

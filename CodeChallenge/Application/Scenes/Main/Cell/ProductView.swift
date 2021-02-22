@@ -36,16 +36,15 @@ class ProductView: UIView {
 extension ProductView {
     func fillData(model: ProductCellModel) {
         button.setTitle(model.visibleName, for: .normal)
-        descriptionLabel.text = model.visibleDescription
+        
+        descriptionLabel.attributedText = model.visibleDescription.htmlAttributedString()
     }
 }
 
+// MARK: - Constraint work
+
 private extension ProductView {
     func setupUI() {
-        NSLayoutConstraint.activate([
-            heightAnchor.constraint(equalToConstant: viewHeight)
-        ])
-        
         setupButton()
         setupLabel()
     }
@@ -75,6 +74,7 @@ private extension ProductView {
             descriptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -defaultMargin)
         ])
         
+        descriptionLabel.numberOfLines = 0
         descriptionLabel.font = Fonts.create(weight: .regular, size: 15)
         descriptionLabel.textColor = Colors.gray
     }

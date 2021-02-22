@@ -54,6 +54,8 @@ private extension MainViewController {
                         
                         self?.productsStack.addRow(productView)
                     }
+                    
+                    self?.productsStack.hidesSeparatorsByDefault = true
                 }
             )
             .disposed(by: viewModel.disposeBag)
