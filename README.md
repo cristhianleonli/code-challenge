@@ -4,7 +4,7 @@
 This repo uses Cocoapods as dependency manager https://cocoapods.org/.
 - [R.swift](https://github.com/mac-cain13/R.swift)
 - [Alamofire](https://github.com/Alamofire/Alamofire)
-- [AloeStackView](ttps://github.com/marlimox/AloeStackView)
+- [AloeStackView](https://github.com/marlimox/AloeStackView)
 
 ## Components
 - ViewModel: parses the data that will be displayed on the UI
@@ -17,8 +17,6 @@ This repo uses Cocoapods as dependency manager https://cocoapods.org/.
 ## Resources
 This project uses Swift 5, R.swift for managing resources in build time.
 
-## TO DO
-
 ## TO FIX
 - The provided json file didn't contain price fields, so for demo purposes, `$0` will be used as placeholder
 - Larger screen testing
@@ -26,3 +24,9 @@ This project uses Swift 5, R.swift for managing resources in build time.
 - Round the price of the subscription plans
 - Json utf8 characters for german special characters
 - Style HTML text to make it look pretty
+
+## Screenshots
+
+| Main | Detail |
+| ------ | ------ |
+| ![launch](https://github.com/cristhianleonli/code-challenge/blob/main/screenshots/screen1.png) | ![launch](https://github.com/cristhianleonli/code-challenge/blob/main/screenshots/screen2.png) |
