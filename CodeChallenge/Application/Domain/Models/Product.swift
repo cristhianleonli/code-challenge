@@ -7,6 +7,10 @@
 
 import Foundation
 
-struct Product {
+struct ProductList: Codable {
+    let products: [Product]
+}
+
+struct Product: Codable {
     
 }

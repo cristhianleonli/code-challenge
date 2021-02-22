@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol FetchProductsInteractor {
-    func fetchAll(completion: (([Product]) -> Void))
+    func fetchAll(page: Int) -> Observable<[Product]>
 }

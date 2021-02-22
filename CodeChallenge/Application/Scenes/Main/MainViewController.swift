@@ -25,7 +25,7 @@ class MainViewController: UIViewController {
         
         setupTableView()
         subscribeToChanges()
-        viewModel.loadTodos()
+        viewModel.loadProducts()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,13 +37,9 @@ class MainViewController: UIViewController {
 // MARK: - Private methods
 private extension MainViewController {
     func subscribeToChanges() {
-        // table view datasource
+        // table viewdatasource
     }
     
     func setupTableView() {
-//        listTableView.register(
-//            TodoTableViewCell.self,
-//            forCellReuseIdentifier: TodoTableViewCell.reuseId
-//        )
     }
 }

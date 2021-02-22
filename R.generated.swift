@@ -32,6 +32,20 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
+  /// This `R.file` struct is generated, and contains static references to 1 files.
+  struct file {
+    /// Resource file `products.json`.
+    static let productsJson = Rswift.FileResource(bundle: R.hostingBundle, name: "products", pathExtension: "json")
+    
+    /// `bundle.url(forResource: "products", withExtension: "json")`
+    static func productsJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.productsJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    fileprivate init() {}
+  }
+  
   /// This `R.font` struct is generated, and contains static references to 5 fonts.
   struct font: Rswift.Validatable {
     /// Font `AvertaPE-Bold`.

@@ -1,0 +1,31 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "1 Monat",
+            "description_html": "<ul>\r\n  <li>sofortige Flatrate für alle Videos (Video on Demand)</li>\r\n  <li>jeden Monat neue Videos</li>\r\n  <li>bequeme monatliche Abbuchung</li>\r\n</ul>",
+            "subscription_cycle_length": 2592000,
+            "google_subscription_id": "de.yogaeasy.abo.1month",
+            "apple_product_id": "de.yogaeasy.abo.1m",
+            "amazon_product_id": null
+        },
+        {
+            "id": 12,
+            "name": "6 Monate",
+            "description_html": "<ul>\r\n  <li>sofortige Flatrate für alle Videos (Video on Demand)</li>\r\n  <li>jeden Monat neue Videos</li>\r\n  <li>bequeme halbjährliche Abbuchung</li><li>jeden Sommer 3 Gratis-Videos zum downloaden</li>\r\n</ul>",
+            "subscription_cycle_length": 15552000,
+            "google_subscription_id": "de.yogaeasy.abo.6month",
+            "apple_product_id": "de.yogaeasy.abo.6m",
+            "amazon_product_id": null
+        },
+        {
+            "id": 14,
+            "name": "12 Monate",
+            "description_html": "<ul>\r\n  <li>sofortige Flatrate für alle Videos (Video on Demand)</li>\r\n  <li>jeden Monat neue Videos</li>\r\n  <li>bequeme jährliche Abbuchung</li><li>jeden Sommer 3 Gratis-Videos zum downloaden</li>\r\n</ul>",
+            "subscription_cycle_length": 31104000,
+            "google_subscription_id": "de.yogaeasy.abo.12month",
+            "apple_product_id": "de.yogaeasy.abo.12m",
+            "amazon_product_id": null
+        }
+    ]
+}

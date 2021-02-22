@@ -39,6 +39,9 @@
 		9F13260225E41FE2004C4F51 /* AvertaPE-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F1325FD25E41FE1004C4F51 /* AvertaPE-Thin.otf */; };
 		9FBFA39525E420BF0002C8E0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFA39425E420BF0002C8E0 /* R.generated.swift */; };
 		9FBFA3A125E421190002C8E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FBFA3A325E421190002C8E0 /* Localizable.strings */; };
+		9FBFA3D125E42B1C0002C8E0 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FBFA3D025E42B1C0002C8E0 /* products.json */; };
+		9FBFA3DB25E42B6E0002C8E0 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFA3DA25E42B6E0002C8E0 /* ApplicationError.swift */; };
+		9FBFA3E325E42C2A0002C8E0 /* ApiUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBFA3E225E42C2A0002C8E0 /* ApiUrlBuilder.swift */; };
 		EB5E37157382558558559C4F /* Pods_CodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C10E48CD608F00E2D1AC30 /* Pods_CodeChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +103,9 @@
 		9F1325FD25E41FE1004C4F51 /* AvertaPE-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvertaPE-Thin.otf"; sourceTree = "<group>"; };
 		9FBFA39425E420BF0002C8E0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		9FBFA3A225E421190002C8E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9FBFA3D025E42B1C0002C8E0 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		9FBFA3DA25E42B6E0002C8E0 /* ApplicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
+		9FBFA3E225E42C2A0002C8E0 /* ApiUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlBuilder.swift; sourceTree = "<group>"; };
 		A686B3A7AE3C1787E56D9DA9 /* Pods-CodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-CodeChallengeTests/Pods-CodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		B50E731949DBBD847AE7F2F2 /* Pods-CodeChallenge-CodeChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallenge-CodeChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-CodeChallenge-CodeChallengeUITests/Pods-CodeChallenge-CodeChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C1633821F0837A15475FCDAC /* Pods-CodeChallenge-CodeChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallenge-CodeChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodeChallenge-CodeChallengeUITests/Pods-CodeChallenge-CodeChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -236,9 +242,9 @@
 		9F13256625E41A5A004C4F51 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				9FBFA3AD25E421FB0002C8E0 /* Domain */,
 				9F13256D25E41B26004C4F51 /* Application.swift */,
 				9F13256C25E41AE5004C4F51 /* Scenes */,
+				9FBFA3AD25E421FB0002C8E0 /* Domain */,
 				9F13256B25E41ADB004C4F51 /* Util */,
 				9F13256A25E41AD2004C4F51 /* Constants */,
 			);
@@ -263,6 +269,8 @@
 				9F1325AA25E41C3E004C4F51 /* Reusable.swift */,
 				9F1325AF25E41C61004C4F51 /* Reusable+Storyboard.swift */,
 				9F1325B425E41C8F004C4F51 /* Decodable.swift */,
+				9FBFA3DA25E42B6E0002C8E0 /* ApplicationError.swift */,
+				9FBFA3E225E42C2A0002C8E0 /* ApiUrlBuilder.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -298,6 +306,7 @@
 		9F1325E225E41E5A004C4F51 /* FetchProducts */ = {
 			isa = PBXGroup;
 			children = (
+				9FBFA3D025E42B1C0002C8E0 /* products.json */,
 				9F1325DA25E41E4D004C4F51 /* FetchProductsInteractor.swift */,
 				9F1325E325E41E99004C4F51 /* MockFetchProductsInteractor.swift */,
 				9F1325F125E41F16004C4F51 /* ApiFetchProductsInteractor.swift */,
@@ -436,6 +445,7 @@
 				9F13260125E41FE2004C4F51 /* AvertaPE-Semibold.otf in Resources */,
 				9F13253825E4158C004C4F51 /* LaunchScreen.storyboard in Resources */,
 				9FBFA3A125E421190002C8E0 /* Localizable.strings in Resources */,
+				9FBFA3D125E42B1C0002C8E0 /* products.json in Resources */,
 				9F1325FF25E41FE2004C4F51 /* AvertaPE-Regular.otf in Resources */,
 				9F1325FE25E41FE2004C4F51 /* AvertaPE-Bold.otf in Resources */,
 				9F13260025E41FE2004C4F51 /* AvertaPE-Light.otf in Resources */,
@@ -587,6 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FBFA3E325E42C2A0002C8E0 /* ApiUrlBuilder.swift in Sources */,
 				9F1325A325E41C07004C4F51 /* Fonts+Create.swift in Sources */,
 				9F1325D625E41D4D004C4F51 /* MainCoordinator.swift in Sources */,
 				9F1325BB25E41CC2004C4F51 /* MainViewController.swift in Sources */,
@@ -598,6 +609,7 @@
 				9F1325DB25E41E4D004C4F51 /* FetchProductsInteractor.swift in Sources */,
 				9F1325B525E41C8F004C4F51 /* Decodable.swift in Sources */,
 				9F1325C825E41CE7004C4F51 /* MainConfigurator.swift in Sources */,
+				9FBFA3DB25E42B6E0002C8E0 /* ApplicationError.swift in Sources */,
 				9F13259B25E41BDF004C4F51 /* Colors+Create.swift in Sources */,
 				9F1325AB25E41C3E004C4F51 /* Reusable.swift in Sources */,
 				9F13257E25E41B7D004C4F51 /* Colors.swift in Sources */,
