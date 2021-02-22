@@ -22,6 +22,6 @@ struct Product: Codable {
     let googleSubscriptionId: String
     let appleProductId: String
     let amazonProductId: String?
-    let price: Double?
-    let currency: String?
+    var price: Double?
+    var currency: String?
 }

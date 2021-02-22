@@ -18,6 +18,7 @@
 		9F0861A725E44EA000C1ED23 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0861A625E44EA000C1ED23 /* DetailCoordinator.swift */; };
 		9F0861AC25E450D000C1ED23 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0861AB25E450D000C1ED23 /* DetailViewModel.swift */; };
 		9F0861B125E450F800C1ED23 /* DetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0861B025E450F800C1ED23 /* DetailConfigurator.swift */; };
+		9F0861B625E4524D00C1ED23 /* ProductCellModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0861B525E4524D00C1ED23 /* ProductCellModelTests.swift */; };
 		9F13252C25E4158A004C4F51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13252B25E4158A004C4F51 /* AppDelegate.swift */; };
 		9F13253525E4158C004C4F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F13253425E4158C004C4F51 /* Assets.xcassets */; };
 		9F13253825E4158C004C4F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F13253625E4158C004C4F51 /* LaunchScreen.storyboard */; };
@@ -87,6 +88,7 @@
 		9F0861A625E44EA000C1ED23 /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
 		9F0861AB25E450D000C1ED23 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		9F0861B025E450F800C1ED23 /* DetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfigurator.swift; sourceTree = "<group>"; };
+		9F0861B525E4524D00C1ED23 /* ProductCellModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellModelTests.swift; sourceTree = "<group>"; };
 		9F13252825E4158A004C4F51 /* CodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F13252B25E4158A004C4F51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F13253425E4158C004C4F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			children = (
 				9F13254225E4158D004C4F51 /* CodeChallengeTests.swift */,
 				9F13254425E4158D004C4F51 /* Info.plist */,
+				9F0861B525E4524D00C1ED23 /* ProductCellModelTests.swift */,
 			);
 			path = CodeChallengeTests;
 			sourceTree = "<group>";
@@ -702,6 +705,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F13254325E4158D004C4F51 /* CodeChallengeTests.swift in Sources */,
+				9F0861B625E4524D00C1ED23 /* ProductCellModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -912,7 +916,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CodeChallengeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -934,7 +938,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CodeChallengeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
